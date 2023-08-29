@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Registration Form</title>
+    <link rel="stylesheet" href="Hotel.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hotel Registration Form</h1>
+        <form id="registration-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="check-in">Check-in Date:</label>
+            <input type="date" id="check-in" name="check-in" required>
+            
+            <label for="check-out">Check-out Date:</label>
+            <input type="date" id="check-out" name="check-out" required>
+
+            <label for="name">Total No of Days</label>
+            <input type="number"  id="Adv" name="Total No of Days:" required>
+            
+            <label for="room-type">Room Type:</label>
+            <select id="room-type" name="room-type" required>
+                <option value="single">Single Room</option>
+                <option value="double">Double Room</option>
+                <option value="suite">Suite</option>
+            </select>
+            <label for="room-rate">Room Rate:</label>
+            <select id="room-rate" name="room-rate" required>
+                <option value="Delux">Delux Room: 2500</option>
+                <option value="suite">Suite Room: 4000</option>
+
+            </select>
+            <label for="name">Advance Payment:</label>
+            <input type="number"  id="Adv" name="Advance Payment:" required>
+
+            
+            <button type="submit">Register</button>
+            <div class="abc">
+                <h4>Additional charges*</h4>
+                <ul>
+                    <li>upto 2 People: No change in Cost</li>
+                    <li>Per Day Cost for Extra Person: 1000</li>
+                </ul>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
